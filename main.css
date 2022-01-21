@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+
+
 .main_body{
     min-height:200vh;
     width:98%;
@@ -48,20 +51,29 @@ img {
     justify-content: center;
     
 }
-  
+
+@media only screen and (max-width:600px ) {
+  .content {
+    display: none;
+   }
+}
+
+ 
+
   /* Add some content at the bottom of the video/page */
 
-@media only screen and (max-width: 768px and up) {
-  body {
-     .content {
+@media only screen and (min-width: 768px) {
+
+  
+  .content{
     position: fixed;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
-    padding: 20px;
-  }
-  
+    padding: 20px
+   }
+   
 
   
   #myBtn:hover {
